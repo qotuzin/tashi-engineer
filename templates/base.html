@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+  <meta name="author" content="{{ config.extra.author }}">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="{{ get_url(path='@/_index.md') }}" class="logo">tashi<span>.engineer</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="{{ get_url(path='@/_index.md') }}">Home</a></li>
+        <li><a href="{{ get_url(path='@/about.md') }}">About</a></li>
+        <li><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></li>
+        <li><a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
+        <li><a href="{{ get_url(path='@/resume.md') }}">Resume</a></li>
+        <li><a href="{{ get_url(path='@/contact.md') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© {{ now() | date(format="%Y") }} {{ config.extra.author }} · {{ config.extra.location }}</p>
+      <div class="footer-links">
+        <a href="{{ config.extra.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ config.extra.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:{{ config.extra.email }}">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    }
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

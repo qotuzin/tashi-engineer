@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    build: .
+    image: tashi-engineer:latest
+    container_name: tashi-engineer
+    ports:
+      - "8081:80"
+    restart: unless-stopped

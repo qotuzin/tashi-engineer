@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Blog — {{ config.title }}{% endblock %}
+{% block description %}Technical writing, thesis notes, and engineering reflections by Tashi Visschedijk{% endblock %}
+
+{% block content %}
+<div class="container">
+  <header class="page-header">
+    <h1>Blog</h1>
+    <p class="meta">Notes on robotics, research, infrastructure, and learning.</p>
+  </header>
+
+  <div class="blog-list">
+    {% set blog = get_section(path="blog/_index.md") %}
+    {% for page in blog.pages %}
+    <a href="{{ page.permalink }}" class="blog-item">
+      <p class="date">{{ page.date | date(format="%d %b %Y") }}</p>
+      <h2>{{ page.title }}</h2>
+      {% if page.description %}
+      <p>{{ page.description }}</p>
+      {% elif page.summary %}
+      <p>{{ page.summary | striptags | truncate(length=160) }}</p>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

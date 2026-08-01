@@ -1,0 +1,27 @@
+base_url = "/"
+title = "Tashi Visschedijk"
+description = "Robotics • Embedded Systems • Space Technology — Mechatronics engineering portfolio"
+default_language = "en"
+compile_sass = false
+minify_html = true
+build_search_index = false
+
+[markdown]
+render_emoji = false
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = false
+smart_punctuation = true
+
+# Zola 0.22+: highlighting moved to its own section (Giallo replaces Syntect)
+[markdown.highlighting]
+theme = "github-dark"
+style = "inline"
+
+[extra]
+author = "Tashi Visschedijk"
+email = "hello@tashi.engineer"
+github = "https://github.com/tashivisschedijk"
+linkedin = "https://linkedin.com/in/tashivisschedijk"
+location = "Brisbane, Australia"
+tagline = "Robotics • Embedded Systems • Space Technology"

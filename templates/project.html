@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <header class="page-header">
+    <a href="{{ get_url(path='@/projects/_index.md') }}" class="back-link">← All projects</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="meta">{{ page.description }}</p>
+    {% endif %}
+    <div class="project-meta-row">
+      {% if page.extra.role %}<span>Role: {{ page.extra.role }}</span>{% endif %}
+      {% if page.extra.year %}<span>{{ page.extra.year }}</span>{% endif %}
+      {% if page.extra.status %}<span>Status: {{ page.extra.status }}</span>{% endif %}
+    </div>
+    {% if page.extra.tags %}
+    <div class="project-tags">
+      {% for tag in page.extra.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+  <article class="content">
+    {{ page.content | safe }}
+  </article>
+</div>
+{% endblock %}

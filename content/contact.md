@@ -7,9 +7,9 @@ template = "page.html"
 I'm open to opportunities in robotics, embedded systems, research, and related engineering roles.
 
 <div class="contact-links" style="margin-top: 1.5rem;">
-  <a href="mailto:hello@tashi.engineer" class="contact-link">Email — hello@tashi.engineer</a>
-  <a href="https://linkedin.com/in/tashivisschedijk" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="https://github.com/tashivisschedijk" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+  <a href="mailto:tashi@tashi.life" class="contact-link">Email — tashi@tashi.life</a>
+  <a href="https://linkedin.com/in/tashi-visschedijk" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/qotuzin" class="contact-link" target="_blank" rel="noopener">GitHub</a>
 </div>
 
 <br>

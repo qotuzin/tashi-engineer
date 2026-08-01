@@ -11,9 +11,9 @@
   --text: #ffffff;
   --text-muted: #9ca3af;
   --text-dim: #6b7280;
-  --accent: #3b82f6;
-  --accent-hover: #60a5fa;
-  --accent-muted: rgba(59, 130, 246, 0.15);
+  --accent: #8b5cf6;
+  --accent-hover: #a78bfa;
+  --accent-muted: rgba(139, 92, 246, 0.15);
   --radius: 8px;
   --radius-lg: 12px;
   --header-h: 60px;
@@ -67,13 +67,29 @@ ul, ol { list-style: none; }
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-weight: 600;
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   color: var(--text);
 }
 
-.logo span { color: var(--text-muted); font-weight: 400; }
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  /* SVG stroke/fill use currentColor */
+  color: var(--text);
+}
+
+.logo-text { line-height: 1; }
+.logo-domain { color: var(--text-muted); font-weight: 400; }
+
+.logo:hover .logo-mark {
+  color: var(--accent);
+}
 
 .nav-links {
   display: flex;
@@ -187,6 +203,33 @@ ul, ol { list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.hero-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  background: var(--card);
 }
 
 /* Sections */
@@ -379,6 +422,29 @@ ul, ol { list-style: none; }
 }
 
 .content a:hover { color: var(--accent-hover); }
+
+/* Buttons inside markdown content must keep their own colours
+   (otherwise .content a makes primary button text purple-on-purple) */
+.content a.btn {
+  text-decoration: none;
+}
+
+.content a.btn-primary {
+  color: #fff;
+}
+
+.content a.btn-primary:hover {
+  color: #fff;
+  background: var(--accent-hover);
+}
+
+.content a.btn-ghost {
+  color: var(--text-muted);
+}
+
+.content a.btn-ghost:hover {
+  color: var(--text);
+}
 
 .content img {
   margin: 1.5rem 0;
@@ -596,6 +662,25 @@ ul, ol { list-style: none; }
 
   .hero { padding: 3.5rem 0 3rem; }
   .section { padding: 3.25rem 0; }
+
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-inline: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  /* Keep photo below text on small screens; remove this rule if you prefer photo on top */
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 480px) {

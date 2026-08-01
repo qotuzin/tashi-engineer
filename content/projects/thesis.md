@@ -1,13 +1,14 @@
 +++
-title = "Bimanual Robot Manipulation"
+title = "Bimanual Robot Manipulation (Thesis)"
 description = "Honours thesis on dual-arm coordination and practical manipulation strategies"
 weight = 2
 [extra]
+featured = true
 role = "Honours researcher"
 year = "2025–2026"
 status = "In progress"
 tags = ["Robotics", "Research", "ROS 2", "Manipulation"]
-# image = "images/projects/thesis.jpg"
+image = "images/projects/thesis/thesis.png"
 +++
 
 ## Overview

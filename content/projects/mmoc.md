@@ -3,11 +3,12 @@ title = "CSIRO MMOC"
 description = "Internship supporting future Australian space activities at the Mission Management Operations Centre"
 weight = 1
 [extra]
+featured = true
 role = "Intern"
 year = "2024–2025"
 status = "Completed"
 tags = ["Space", "Systems", "Internship", "CSIRO"]
-# image = "images/projects/mmoc.jpg"
+image = "images/projects/mmoc/mmoc.jpg"
 +++
 
 ## Overview

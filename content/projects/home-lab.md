@@ -7,7 +7,7 @@ role = "Designer & operator"
 year = "Ongoing"
 status = "Active"
 tags = ["TrueNAS", "Docker", "Networking", "Self-hosting"]
-# image = "images/projects/home-lab.jpg"
+image = "images/projects/home-lab/home-lab.jpg"
 +++
 
 ## Overview

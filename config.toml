@@ -1,6 +1,6 @@
 base_url = "/"
 title = "Tashi Visschedijk"
-description = "Robotics • Embedded Systems • Space Technology — Mechatronics engineering portfolio"
+description = "Robotics, Embedded Systems, Space Technology"
 default_language = "en"
 compile_sass = false
 minify_html = true
@@ -20,8 +20,9 @@ style = "inline"
 
 [extra]
 author = "Tashi Visschedijk"
+website = "tashi.engineer"
 email = "tashi@tashi.life"
 github = "https://github.com/qotuzin"
 linkedin = "https://linkedin.com/in/tashi-visschedijk"
 location = "Brisbane, Australia"
-tagline = "Robotics • Embedded Systems • Space Technology"
+tagline = "Robotics, Embedded Systems, Space Technology"

@@ -8,7 +8,7 @@ role = "Honours researcher"
 year = "2025–2026"
 status = "In progress"
 tags = ["Robotics", "Research", "ROS 2", "Manipulation"]
-image = "images/projects/thesis/thesis.png"
+image = "images/projects/thesis/thesis.webp"
 +++
 
 ## Overview
@@ -25,28 +25,13 @@ Many real-world manipulation tasks benefit from or require two arms working toge
 - Implement and evaluate selected strategies on available hardware / simulation
 - Document design decisions, limitations, and results clearly
 
-## Approach
-
-The project is treated as a living engineering diary. Progress, experiments, and reflections are recorded over time (see the Blog section for week-by-week notes).
-
-Key themes:
-
-- Motion and task planning for two arms
-- Synchronisation and shared control
-- Sensing and feedback for contact-rich tasks
-- Practical software architecture (likely ROS 2 based)
-
 ## Technologies
 
-- ROS 2
 - Python / C++
 - Simulation and/or physical dual-arm platform
-- Standard robotics tooling (MoveIt, etc. as applicable)
+- Mujoco for simulation
+- Unitree G1 humanoid robot as the platform for research.
 
 ## Status
 
 Work is ongoing. This page will be updated as results and documentation mature.
-
-## Related Writing
-
-Thesis progress notes appear in the [Blog](/blog/).

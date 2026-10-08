@@ -12,7 +12,7 @@ image = "images/projects/home-lab/home-lab.jpg"
 
 ## Overview
 
-A continuously evolving home laboratory built around TrueNAS, Docker, and a carefully designed network. The lab hosts personal services, development environments, monitoring, and this portfolio website itself.
+A continuously evolving homelab built with TrueNAS, Docker, Pangolin, and a carefully designed network. The lab hosts personal services, development environments, monitoring, and this portfolio website itself.
 
 ## Goals
 
@@ -30,20 +30,3 @@ A continuously evolving home laboratory built around TrueNAS, Docker, and a care
 | Networking | Segmented networks, reverse proxy |
 | Public exposure | Pangolin tunnel infrastructure (external) |
 | Monitoring | (as configured) |
-
-The portfolio container is deliberately simple: it only serves static files on a local port. DNS, TLS, reverse proxy, and WAN exposure are handled outside this project.
-
-## Key Decisions
-
-- Prefer static, rebuildable services where possible
-- Keep application containers focused on a single responsibility
-- Document topology and recovery procedures
-- Treat infrastructure as a first-class engineering project
-
-## Lessons
-
-Running real services at home quickly surfaces issues around backups, updates, observability, and failure modes. These lessons transfer directly to professional systems work.
-
-## Related Writing
-
-See blog posts on TrueNAS setup and infrastructure notes.

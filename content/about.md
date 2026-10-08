@@ -31,7 +31,7 @@ Assisted as an executive at the QUT Robotics Club and other student organisation
 
 ## Internship
 
-**CSIRO - Mission Management Operations Centre (MMOC)**  
+**CSIRO - Mobile Mission Operations Centre (MMOC)**  
 Supporting future Australian launch capabilities through systems and software work in a professional research environment.
 
 ---
@@ -41,7 +41,7 @@ Supporting future Australian launch capabilities through systems and software wo
 **Honours Thesis - Bimanual Robot Manipulation**  
 Current research exploring dual-arm coordination, control, and practical manipulation strategies.
 
-I am working under the supervision of Professor Will Browne at the QUT Centre for Robotics for my honours thesis project. The research is into the manipulation of a bimanual robotic system, developing both hardware and control software. This work will be documented as a living project on this site.
+I am working under the supervision of Professor Will Browne at the QUT Centre for Robotics for my honours thesis project. The research is into the manipulation of a bimanual robotic system, developing manipulation policies and sim-to-real pipelines.
 
 ---
 

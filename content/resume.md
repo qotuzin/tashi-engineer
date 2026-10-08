@@ -1,5 +1,5 @@
 +++
-title = "Resume of Tashi Visschedijk"
+title = "Resume"
 description = ""
 template = "page.html"
 +++

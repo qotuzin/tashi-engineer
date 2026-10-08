@@ -1,6 +1,6 @@
 +++
 title = "CSIRO MMOC"
-description = "Internship supporting future Australian space activities at the Mission Management Operations Centre"
+description = "Internship supporting future Australian space activities through work on the Mobile Mission Operations Centre"
 weight = 1
 [extra]
 featured = true
